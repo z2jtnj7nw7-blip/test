@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TALLER SHAHBAZ | Premium Automotive Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Montserrat',sans-serif;
+background:#030712;
+color:white;
+overflow-x:hidden;
+}
+/*---------------BACKGROUND----------------*/
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background:
+radial-gradient(circle at top,#2563EB55,transparent 40%),
+radial-gradient(circle at bottom,#60A5FA22,transparent 40%);
+z-index:-1;
+}
+/*---------------HEADER----------------*/
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(20px);
+background:rgba(0,0,0,.35);
+border-bottom:1px solid rgba(255,255,255,.1);
+z-index:999;
+}
+.logo{
+font-size:34px;
+font-weight:900;
+letter-spacing:2px;
+color:#60A5FA;
+}
+.menu{
+display:flex;
+gap:30px;
+}
+.menu a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.4s;
+}
+.menu a:hover{
+color:#60A5FA;
+}
+/*---------------BUTTONS----------------*/
+.btn{
+padding:18px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.4s;
+display:inline-block;
+}
+.blue{
+background:linear-gradient(
+135deg,
+#2563EB,
+#60A5FA);
+color:white;
+box-shadow:0 0 30px #2563EB;
+}
+.green{
+background:#25D366;
+color:white;
+}
+.btn:hover{
+transform:translateY(-6px);
+}
+/*---------------HERO----------------*/
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1900&q=80");
+background-size:cover;
+background-position:center;
+}
+.hero h1{
+font-size:90px;
+font-weight:900;
+margin-bottom:20px;
+text-shadow:0 0 40px #2563EB;
+}
+.hero span{
+color:#60A5FA;
+}
+.hero p{
+font-size:25px;
+max-width:900px;
+margin:auto;
+margin-bottom:40px;
+color:#dddddd;
+}
+.buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+/*---------------SECTIONS----------------*/
+section{
+padding:120px 8%;
+}
+.title{
+font-size:55px;
+text-align:center;
+margin-bottom:80px;
+font-weight:900;
+color:#60A5FA;
+}
+/*---------------SERVICES----------------*/
+.services{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+}
+.card{
+padding:50px;
+border-radius:35px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+transition:.5s;
+}
+.card:hover{
+transform:
+translateY(-15px);
+box-shadow:
+0 0 60px #2563EB55;
+}
+.card h2{
+margin-bottom:20px;
+color:#60A5FA;
+font-size:28px;
+}
+.card p{
+line-height:1.8;
+color:#cccccc;
+}
+/*---------------STATISTICS----------------*/
+.stats{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+.stat{
+padding:50px;
+text-align:center;
+background:#081120;
+border-radius:30px;
+}
+.number{
+font-size:65px;
+font-weight:900;
+color:#60A5FA;
+}
+/*---------------CONTACT----------------*/
+.contact{
+text-align:center;
+}
+.contact h2{
+font-size:60px;
+margin-bottom:30px;
+}
+.contact p{
+font-size:22px;
+margin-bottom:40px;
+color:#cccccc;
+}
+/*---------------FOOTER----------------*/
+footer{
+padding:60px;
+text-align:center;
+background:black;
+}
+footer p{
+margin-bottom:10px;
+color:#cccccc;
+}
+/*---------------FLOATING----------------*/
+.float{
+position:fixed;
+bottom:30px;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:32px;
+box-shadow:0 0 40px rgba(0,0,0,.6);
+z-index:999;
+}
+.phone{
+right:110px;
+background:#2563EB;
+}
+.whatsapp{
+right:25px;
+background:#25D366;
+}
+/*---------------MOBILE----------------*/
+@media(max-width:768px){
+.hero h1{
+font-size:55px;
+}
+.hero p{
+font-size:20px;
+}
+.title{
+font-size:40px;
+}
+.menu{
+display:none;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+TALLER SHAHBAZ
+</div>
+<div class="menu">
+<a href="#">Inicio</a>
+<a href="#">Servicios</a>
+<a href="#">Contacto</a>
+</div>
+</header>
+<section class="hero">
+<div>
+<h1>
+PREMIUM<br>
+<span>AUTOMOTIVE</span>
+</h1>
+<p>
+Tu Taller Mecánico Premium en Valencia.
+Calidad, precisión y confianza para tu vehículo.
+</p>
+<div class="buttons">
+<a href="tel:+34697655041"
+class="btn blue">
+LLAMAR AHORA
+</a>
+<a href="https://wa.me/34632423736"
+class="btn green">
+PEDIR CITA
+</a>
+</div>
+</div>
+</section>
+<section>
+<h1 class="title">
+NUESTROS SERVICIOS
+</h1>
+<div class="services">
+<div class="card">
+<h2>Mecánica General</h2>
+<p>
+Servicio profesional para todas las marcas.
+</p>
+</div>
+<div class="card">
+<h2>Diagnosis Electrónica</h2>
+<p>
+Equipos de última generación para detectar averías.
+</p>
+</div>
+<div class="card">
+<h2>Cambio de Aceite</h2>
+<p>
+Aceites premium y máxima protección para el motor.
+</p>
+</div>
+<div class="card">
+<h2>Frenos</h2>
+<p>
+Seguridad y rendimiento garantizados.
+</p>
+</div>
+<div class="card">
+<h2>Aire Acondicionado</h2>
+<p>
+Carga y reparación completa del sistema.
+</p>
+</div>
+<div class="card">
+<h2>Pre ITV</h2>
+<p>
+Preparamos tu vehículo para superar la ITV.
+</p>
+</div>
+</div>
+</section>
+<section>
+<h1 class="title">
+¿POR QUÉ NOSOTROS?
+</h1>
+<div class="stats">
+<div class="stat">
+<div class="number">
+15+
+</div>
+<p>
+Años de Experiencia
+</p>
+</div>
+<div class="stat">
+<div class="number">
+24h
+</div>
+<p>
+Atención por WhatsApp
+</p>
+</div>
+<div class="stat">
+<div class="number">
+100%
+</div>
+<p>
+Compromiso con la Calidad
+</p>
+</div>
+</div>
+</section>
+<section class="contact">
+<h2>
+TU VEHÍCULO MERECE LO MEJOR
+</h2>
+<p>
+Solicita tu presupuesto sin compromiso.
+</p>
+<a href="tel:+34697655041"
+class="btn blue">
+LLAMAR
+</a>
+<a href="https://wa.me/34632423736"
+class="btn green">
+WHATSAPP
+</a>
+</section>
+<footer>
+<h2>
+TALLER SHAHBAZ
+</h2>
+<br>
+<p>
+Valencia · España
+</p>
+<p>
+Lunes a Viernes
+</p>
+<p>
+09:00 - 14:00 | 17:00 - 20:00
+</p>
+<p>
+Sábados: 10:00 - 14:00
+</p>
+<p>
++34 697 655 041
+</p>
+</footer>
+<a href="tel:+34697655041"
+class="float phone">
+📞
+</a>
+<a href="https://wa.me/34632423736"
+class="float whatsapp">
+💬
+</a>
+</body>
+</html>
