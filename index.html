@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller Shahbaz | Taller Mecánico Premium en Valencia</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:Segoe UI,sans-serif;
+background:#081120;
+color:white;
+line-height:1.7;
+}
+/* HEADER */
+header{
+position:sticky;
+top:0;
+background:rgba(8,17,32,.95);
+backdrop-filter:blur(10px);
+padding:20px;
+z-index:999;
+box-shadow:0 0 20px rgba(37,99,235,.2);
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+.logo{
+font-size:32px;
+font-weight:800;
+color:#60A5FA;
+}
+.buttons{
+display:flex;
+gap:15px;
+}
+.btn{
+padding:12px 25px;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+.call{
+background:#2563EB;
+color:white;
+}
+.whatsapp{
+background:#25D366;
+color:white;
+}
+.btn:hover{
+transform:translateY(-3px);
+}
+/* HERO */
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:
+linear-gradient(rgba(8,17,32,.8),
+rgba(8,17,32,.8)),
+url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+.hero h1{
+font-size:65px;
+margin-bottom:15px;
+color:#60A5FA;
+}
+.hero p{
+font-size:25px;
+margin-bottom:30px;
+}
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+/* SERVICES */
+section{
+padding:80px 20px;
+}
+.title{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#60A5FA;
+}
+.services{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+.card{
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:25px;
+text-align:center;
+transition:.4s;
+backdrop-filter:blur(10px);
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 0 30px
+rgba(37,99,235,.5);
+}
+.card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#60A5FA;
+}
+/* WHY US */
+.stats{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+.stat{
+padding:40px;
+text-align:center;
+border-radius:25px;
+background:#0F172A;
+}
+.number{
+font-size:55px;
+font-weight:bold;
+color:#60A5FA;
+}
+/* CONTACT */
+.contact{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+.contact a{
+display:inline-block;
+margin:10px;
+text-decoration:none;
+padding:18px 35px;
+border-radius:50px;
+font-weight:bold;
+color:white;
+background:#2563EB;
+}
+.contact .green{
+background:#25D366;
+}
+/* FOOTER */
+footer{
+padding:40px;
+text-align:center;
+background:black;
+}
+footer p{
+margin-bottom:10px;
+}
+/* FLOATING BUTTONS */
+.float{
+position:fixed;
+bottom:25px;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:30px;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+z-index:999;
+}
+.phone{
+right:100px;
+background:#2563EB;
+}
+.wa{
+right:20px;
+background:#25D366;
+}
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{
+font-size:42px;
+}
+.hero p{
+font-size:20px;
+}
+.title{
+font-size:35px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">
+TALLER SHAHBAZ
+</div>
+<div class="buttons">
+<a href="tel:+34697655041"
+class="btn call">
+Llamar
+</a>
+<a href="https://wa.me/34632423736"
+class="btn whatsapp">
+WhatsApp
+</a>
+</div>
+</nav>
+</header>
+<section class="hero">
+<div>
+<h1>
+TALLER SHAHBAZ
+</h1>
+<p>
+Tu Taller Mecánico Premium en Valencia
+</p>
+<div class="hero-buttons">
+<a href="tel:+34697655041"
+class="btn call">
+Llamar Ahora
+</a>
+<a href="https://wa.me/34632423736"
+class="btn whatsapp">
+Pedir Cita
+</a>
+</div>
+</div>
+</section>
+<section>
+<h2 class="title">
+Nuestros Servicios
+</h2>
+<div class="services">
+<div class="card">
+<h3>Mecánica General</h3>
+<p>
+Reparaciones completas para todas las marcas.
+</p>
+</div>
+<div class="card">
+<h3>Cambio de Aceite</h3>
+<p>
+Aceites y filtros de máxima calidad.
+</p>
+</div>
+<div class="card">
+<h3>Diagnosis Electrónica</h3>
+<p>
+Equipos profesionales para detectar averías.
+</p>
+</div>
+<div class="card">
+<h3>Frenos y Suspensión</h3>
+<p>
+Seguridad y rendimiento para tu vehículo.
+</p>
+</div>
+<div class="card">
+<h3>Pre ITV</h3>
+<p>
+Preparamos tu coche para superar la ITV.
+</p>
+</div>
+<div class="card">
+<h3>Aire Acondicionado</h3>
+<p>
+Carga y reparación del sistema de climatización.
+</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="title">
+¿Por Qué Elegirnos?
+</h2>
+<div class="stats">
+<div class="stat">
+<div class="number">
+100%
+</div>
+<p>
+Compromiso con la Calidad
+</p>
+</div>
+<div class="stat">
+<div class="number">
+24h
+</div>
+<p>
+Respuesta por WhatsApp
+</p>
+</div>
+<div class="stat">
+<div class="number">
+★★★★★
+</div>
+<p>
+Atención Profesional
+</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="title">
+Contacto
+</h2>
+<div class="contact">
+<p>
+¡Solicita tu presupuesto sin compromiso!
+</p>
+<br>
+<a href="tel:+34697655041">
+Llamar Ahora
+</a>
+<a href="https://wa.me/34632423736"
+class="green">
+WhatsApp
+</a>
+</div>
+</section>
+<footer>
+<p>
+TALLER SHAHBAZ
+</p>
+<p>
+Valencia, España
+</p>
+<p>
+Lunes - Viernes
+</p>
+<p>
+09:00 - 14:00 | 17:00 - 20:00
+</p>
+<p>
+Sábados: 10:00 - 14:00
+</p>
+<p>
+Teléfono: +34 697 655 041
+</p>
+</footer>
+<a href="tel:+34697655041"
+class="float phone">
+📞
+</a>
+<a href="https://wa.me/34632423736"
+class="float wa">
+💬
+</a>
+</body>
+</html>
